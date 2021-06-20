@@ -30,7 +30,7 @@ if(isset($_POST['save'])){
     $my_query = "select * from motor_table";
     $result = mysqli_query($connection, $my_query);
 
-    $my_query = "UPDATE INTO motor_table(Motor1,Motor2,Motor3,Motor4,Motor5,Motor6)VALUES('$v1','$v2','$v3','$v4','$v5', $v6)";
+    $my_query = "INSERT INTO motor_table(Motor1,Motor2,Motor3,Motor4,Motor5,Motor6)VALUES('$v1','$v2','$v3','$v4','$v5', $v6)";
     $result = mysqli_query($connection, $my_query);
     if($result)
     {
